@@ -27,7 +27,7 @@ callBackAfterDownload = () => {
          
           console.log(`uniques`, uniques);
           if(uniques.length > 0) {
-            fs.writeFile(`${todaysDate.getMonth()}-${todaysDate.getDate()}_${todaysDate.getHours()}-${todaysDate.getMinutes()}-UDs`, uniques, function (err) {
+            fs.writeFile(`./Uniques/${todaysDate.getMonth()}-${todaysDate.getDate()}_${todaysDate.getHours()}-${todaysDate.getMinutes()}-UDs`, uniques, function (err) {
               if (err) throw err;
               console.log('Saved!');
             });
